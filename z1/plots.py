@@ -55,16 +55,23 @@ ax1.boxplot(boxes.values(),
                 'markeredgecolor': 'black',
                 'markerfacecolor': 'blue'
             },
-            boxprops={'color': 'blue'},
+            boxprops={
+                'color': 'blue',
+                'linewidth': 1.5
+            },
             flierprops={
                 'marker': '+',
                 'markeredgecolor': 'blue'
             },
-            medianprops={'color': 'red'},
+            medianprops={
+                'color': 'red',
+                'linewidth': 1.5
+            },
             whiskerprops={
                 'color': 'blue',
                 'linestyle': '--',
-                'dashes': (8, 8)
+                'linewidth': 1.5,
+                'dashes': (6, 6)
             })
 
 ax1.set_ylim([60, 100])
